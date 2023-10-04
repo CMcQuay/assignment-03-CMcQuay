@@ -18,8 +18,8 @@
         android:id="@+id/taskList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/task_list_empty"
         android:gravity="center_vertical"
+        android:text="@string/task_list_empty"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,16 +33,17 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/task_placeholder"
-        app:layout_constraintEnd_toStartOf="@+id/add_btn"
+        app:layout_constraintEnd_toStartOf="@+id/addBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/add_btn"
-        android:tint="@color/colorPrimary"
-        android:src="@drawable/ic_baseline_add_circle_24"
+        android:id="@+id/addBtn"
         android:layout_width="32dp"
         android:layout_height="32dp"
+        android:onClick="onAddBtnClicked"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        android:tint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName" />
